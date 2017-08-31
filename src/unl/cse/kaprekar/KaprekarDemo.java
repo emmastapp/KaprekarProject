@@ -1,9 +1,8 @@
 package unl.cse.kaprekar;
 
 public class KaprekarDemo {
-
+//test
 	public static void main(String args[]) {
-		
 		if(args.length != 1) {
 			System.err.println("Usage: KaprekarDemo n");
 			System.exit(1);
