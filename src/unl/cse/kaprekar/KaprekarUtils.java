@@ -22,14 +22,14 @@ public class KaprekarUtils {
 	 * @return <code>true</code> if <code>n</code> is a Kaprekar Number, 
 	 * <code>false</code> otherwise.
 	 */
-	public static int isKaprekar(int n) {
+	public static boolean isKaprekar(int n) {
 		
 		if(n < 1); {
-			return 0;
+			return false;
 		} 
 		
 		//we use a long to accommodate larger squares
-		long square = n * n;
+		long square = Math.pow(n, 2);
 		int numDigits = (int) Math.log10(n) + 1;
 		long modulus = 1;
 		long first, second;
