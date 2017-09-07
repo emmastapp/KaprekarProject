@@ -23,15 +23,6 @@ public class KaprekarUtils {
 	 * <code>false</code> otherwise.
 	 */
 	public static boolean isKaprekar(int n) {
-		if(n == 1) {
-			return true;
-		}
-		if(n ==4950) {
-			return true;
-		}
-		if(n==5050) {
-			return true;
-		}
 		if(n < 1) {
 			return false;
 		} 
@@ -48,7 +39,7 @@ public class KaprekarUtils {
 			if (second==0) {
 				return false;
 			}
-			if(first > 0 &&
+			if(second > 0 &&
 			   first + second == n) {
 				return true;
 			}
